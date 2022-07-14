@@ -1,4 +1,4 @@
-def choiceNum(maxNum, stepNum):   
+def choiceNum(stepNum, maxNum):   
     data = []
     delData = []
     num = 0
@@ -18,6 +18,6 @@ def choiceNum(maxNum, stepNum):
         'delData': delData
     }
 
-result = choiceNum(34, 3)
+result = choiceNum(3, 41)
 print('最后剩下的是第',result['lastData'],'人')
 print('淘汰顺序为',result['delData'])
