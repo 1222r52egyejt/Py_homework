@@ -26,7 +26,7 @@ def choiceNum(stepNum, maxNum):
 def time_master(choiceNum):
     print('开始运行程序...')
     start = time.time()
-    result = choiceNum(3, 44444)
+    result = choiceNum(3, 55555)
     print('最后剩下的是第',result['last_data'],'人')
     print('淘汰顺序为',result['del_data'])
     stop = time.time()

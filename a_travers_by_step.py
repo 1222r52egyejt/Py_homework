@@ -5,7 +5,7 @@ from collections import deque
 
 def choiceNum(stepNum, start_id):
    # data = deque(['小明', '小梅', '小李', '小王', '小陈', 'kitty', 'hellokitty', '小红' ])
-    data = deque(range(44444))
+    data = deque(range(55555))
     delData = deque()
     if 0 <= start_id < len(data):
         data.rotate(-(start_id))
@@ -17,7 +17,8 @@ def choiceNum(stepNum, start_id):
 
     while len(data) > 1:
         data.rotate(-(stepNum-1)) #左移k-1次
-        delData.append(data[0])
+        #delData.append(data[0])
+        delData.append(data[0] + 1)
         data.popleft()      #删除第k元素
     return data[0], delData
 
