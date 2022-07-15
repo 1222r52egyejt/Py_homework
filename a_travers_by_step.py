@@ -1,10 +1,11 @@
-
+import time
 import sys
 
 from collections import deque
 
 def choiceNum(stepNum, start_id):
-    data = deque(['小明', '小梅', '小李', '小王', '小陈', 'kitty', 'hellokitty'])
+   # data = deque(['小明', '小梅', '小李', '小王', '小陈', 'kitty', 'hellokitty', '小红' ])
+    data = deque(range(44444))
     delData = deque()
     if 0 <= start_id < len(data):
         data.rotate(-(start_id))
@@ -20,4 +21,13 @@ def choiceNum(stepNum, start_id):
         data.popleft()      #删除第k元素
     return data[0], delData
 
-print(choiceNum(2, 0))
+def time_master(choiceNum):
+    print('开始运行程序...')
+    start = time.time()
+    print(choiceNum(3, 0))
+    stop = time.time()
+    print('程序结束运行...')
+    print(f'一共耗费了{(stop - start):.2f}秒。')
+
+# print(choiceNum(2, 0))
+time_master(choiceNum)
