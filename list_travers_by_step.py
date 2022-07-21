@@ -1,5 +1,5 @@
-import time
-from turtle import delay
+# import time
+# from turtle import delay
 
 def choiceNum(stepNum, maxNum):   
     data = []
@@ -23,14 +23,6 @@ def choiceNum(stepNum, maxNum):
     }
 
 
-def time_master(choiceNum):
-    print('开始运行程序...')
-    start = time.time()
-    result = choiceNum(3, 44444)
-    print('最后剩下的是第',result['last_data'],'人')
-    print('淘汰顺序为',result['del_data'])
-    stop = time.time()
-    print('程序结束运行...')
-    print(f'一共耗费了{(stop - start):.2f}秒。')
-
-time_master(choiceNum)
+if __name__ == '_main_':
+    choiceNum()
+   
