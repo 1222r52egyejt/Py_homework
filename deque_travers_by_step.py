@@ -3,14 +3,14 @@
 from collections import deque
 # from turtle import circle
 
-class People:
+class Person:
     
     def __init__(self, members = []):
         self._members = members
     def add_member(self, name):
         return self._members.append(name)
 
-classA = People()
+classA = Person()
 classA.add_member('mary')
 classA.add_member('jack')
 classA.add_member('曹总')
